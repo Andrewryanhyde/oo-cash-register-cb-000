@@ -13,15 +13,15 @@ class CashRegister
    @total
   end
 
-  def add_item(item, price, quantity)
+  def add_item(item, price, quantity = 1)
     @item = item
     @price = price
     @basket << @item
-    if quantity == true
+    if quantity == 1
+      @total += @price
+    else
       product_total = @price * quantity
       @total += product_total
-    else
-    @total += @price
     end
   end
 
