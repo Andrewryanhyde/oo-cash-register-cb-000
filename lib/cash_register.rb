@@ -17,9 +17,9 @@ class CashRegister
     @basket << item
     if quantity == true
       product_total = price * quantity
-      @total + product_total
+      @total += product_total
     else
-    @total + price
+    @total += price
     end
   end
 
