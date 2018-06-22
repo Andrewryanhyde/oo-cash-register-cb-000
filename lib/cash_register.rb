@@ -1,10 +1,19 @@
 
-class Cash_register 
+class Cash_register
 
-  attr_accessor :basket 
+  attr_accessor :discount
 
-  def initialize(basket_n) 
-    @basket = basket_n
+  def initialize(discount)
+    @basket = discount
+    @total = 0
+    
   end
+
+  def total 
+    @total
+  end
+  
+
+  
 
 end
