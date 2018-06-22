@@ -13,7 +13,9 @@ class CashRegister
    @total
   end
 
-  def add_item(@item, @price, quantity)
+  def add_item(item, price, quantity)
+    @item = item
+    @price = price
     @basket << @item
     if quantity == true
       product_total = @price * quantity
@@ -41,7 +43,7 @@ class CashRegister
     @basket.pop
     @new_total - @price
   end
-    
+
 
 
 
