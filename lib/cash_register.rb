@@ -5,7 +5,7 @@ class CashRegister
 
   def initialize(discount)
     @discount = discount
-    @basket = {}
+    @basket = []
     @total = 0
   end
 
@@ -31,6 +31,10 @@ class CashRegister
     else
       puts "There is no discount to apply."
     end
+  end
+
+  def items 
+    @basket
   end
 
 
