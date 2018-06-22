@@ -21,6 +21,7 @@ class Cash_register
       @total + product_total
     else
     @total + price
+    end
   end
 
 
