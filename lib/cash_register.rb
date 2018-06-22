@@ -16,14 +16,14 @@ class Cash_register
 
   def add_item(item, price, quantity)
     @basket << item
-    if quantity 
-      product_total = price * quantity 
+    if quantity == true
+      product_total = price * quantity
       @total + product_total
-    else 
+    else
     @total + price
   end
-    
-    
+
+
 
 
 
