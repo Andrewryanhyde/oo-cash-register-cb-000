@@ -1,5 +1,5 @@
 
-class Cash_register
+class CashRegister
 
   attr_accessor :discount
 
@@ -7,7 +7,6 @@ class Cash_register
     @discount = discount
     @basket = {}
     @total = 0
-
   end
 
   def total
